@@ -6,12 +6,12 @@ let guest : string[] = ["Ghulam Murtaza", "Shahid Ali", "Sohail"];
 for(let i = 0; i< guest.length; i++) {
     console.log(`Dear Mr.${guest[i]},\nit is our pleasure to invite you to dinner.\nThank You!\n`);
 }/*
-Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+Modified list and replacing the name of the guest who can’t make it with the name of the new person inviting.
 */
 console.log (`"unfortunately ${guest[2]},can't come to dinner"`);
 guest[2] = "Abdul Hadi";
 console.log("\nNew List of Invitation\n");
-// second set of invitation messages priting.
+// second set of invitation messages printing.
 for(let j = 0; j< guest.length; j++) {
     console.log(`Dear Mr.${guest[j]}, \nit is our pleasure to invite you to dinner.\nThank You!\n`);
 }
