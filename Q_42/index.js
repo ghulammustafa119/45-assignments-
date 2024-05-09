@@ -6,7 +6,7 @@ function show_magicians(magicians) {
     magicians.forEach(names => console.log(names));
 }
 function make_great(magicians) {
-    return magician.map(names => `The great ${names}`);
+    return magicians.map(names => `The great ${names}`);
 }
 let modifiedArr = make_great(magician);
 show_magicians(modifiedArr);
