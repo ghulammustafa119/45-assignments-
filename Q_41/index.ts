@@ -3,6 +3,6 @@ Magicians: Make a array of magician’s names. Pass the array to a function call
 */
 let magician: string[] = ["David Copperfield", "Harry Houdini", "Penn Jillette", "Teller"];
 function show_magicians(magicians: string[]) {
-    magician.forEach(names => console.log(names));
+    magicians.forEach(names => console.log(names));
 }
 show_magicians(magician);
