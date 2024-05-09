@@ -1,15 +1,14 @@
 /*
 Great Magicians: Start with a copy of your program from Exercise 41. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified
 */
-let magicians:string[] = ["Ali", "Hamza", "Hassan", "Saleem"];
+let magician:string[] = ["Mustafa", "Bhutto", "Mujtaba", "Nayab"];
 
-function make_great(magiciansArray:string[]){
-    for(let value of magiciansArray){
-      magiciansArray[magiciansArray.indexOf(value)] = `The Great ${value}`
-    }
-}
+
 function show_magicians(magicians: string[]) {
-    magicians.forEach((magician) => console.log(magician));
+    magicians.forEach(names => console.log(names));
   }
-  make_great(magicians);
-  show_magicians(magicians);
+function make_great(magicians:string[]){
+  return  magician.map(names => `The great ${names}`);
+}
+let modifiedArr = make_great(magician);
+show_magicians(modifiedArr);
